@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>projekt.</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+</head>
+<body>
+	<!-- Navigation bar that is fixed to the top of the screen regardless of scrolling -->
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class='container'>
+			<p class='navbar-brand'>Activity Planner</p>
+			<ul class="nav navbar-nav">
+				<li><button class="btn btn-default navbar-btn" id='addActivity'>+ Add Activity</button></li>
+				<li><button class="btn btn-default navbar-btn" id='addDay'>+ Add a Day</button></li>
+				<li><button class='btn btn-default navbar-btn' id='helpBtn'><span class='glyphicon glyphicon-question-sign'></span></button></li>
+			</ul>
+			<ul class='nav navbar-nav navbar-right'>
+				<li><button class='btn btn-default navbar-btn' id='left'><span class='glyphicon glyphicon-chevron-left'></span>&nbsp;Left</button></li>
+				<li><button class='btn btn-default navbar-btn' id='right'>Right&nbsp;<span class='glyphicon glyphicon-chevron-right'></span></button></li>
+			</ul>
+		</div>
+	</nav>
+	
+	<!-- Container for the rest of the page -->
+	<div id="container">
+		<div class="mainDiv">
+			<!-- This div will always be there and is the one for the parked activities -->
+			<div class='panel panel-default'>
+				<div class='panel panel-heading'><span class="text-info"><strong>Parked Activities</strong></span></div>
+				<div class='dropDiv panel panel-body' id='activities'></div>
+			</div>
+		</div>
+		<div id='dayContainer'>
+			<!-- divs to contain the days -->
+			<div id='allDays'></div>
+		</div>
+	</div>
+
+
+
+
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.js"></script>
+	<!--JS-->
+
+	<script src="app.js"></script> 
+
+	<script src="model.js"></script>
+
+	<script src="activityPlanner.js"></script>
+	<script src="controller.js"></script>
+	<script src="overlayMsg.js"></script>
+	<script src="overlay.js"></script>
+
+
+</body>
+</html>

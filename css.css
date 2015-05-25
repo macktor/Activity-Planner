@@ -1,0 +1,56 @@
+#day{
+	min-height: 500px;
+	height: 100%;
+}
+#activities{
+	min-height: 500px;
+	height: 100%;
+}
+.mainDiv{
+	width: 300px;
+	max-height: 800px;
+	float: left;
+	margin: 40px;
+	display:inline-block;
+}
+.mainDiv table{
+	width: 100%;
+}
+.mainDiv tr{
+	height: 30px;
+	padding: 1px;
+}
+.mainDiv .panel-heading{
+	margin-bottom: 0px !important;
+}
+.mainDiv .panel-body{
+	margin-bottom: 0px !important;
+	}
+.mainDiv .progress{
+	margin-bottom: 0px !important;
+}
+#fillerTable{
+	height: 100%;
+}	
+textarea {
+	resize: none;
+}
+.tableClass tr :hover .close{
+	display: inline;
+}
+.tableClass .close {
+	display: none;
+}
+.tableClass tr{
+	cursor: -webkit-grab;
+}
+.mainDiv .alert{
+	display: none;
+	margin-bottom: 0px !important;
+}
+body {
+	padding-top: 30px;
+}
+html {
+	background-color: #f9f9f9;
+}
